@@ -2,7 +2,7 @@ function onCreatePost()
     addHaxeLibrary('Boyfriend');
     runHaxeCode([[
         bidu = new Boyfriend(0, 0, 'bf');
-        bidu.frames = Paths.getSparrowAtlasFromURL('https://github.com/volved2/LoadingAssetsTest/raw/main/images/characters/BIDU_GOLD.xml', 'https://github.com/volved2/LoadingAssetsTest/blob/main/images/characters/BIDU_GOLD.png?raw=true');
+        bidu.frames = Paths.loadSparrowAtlasFromURL('https://github.com/volved2/LoadingAssetsTest/raw/main/images/characters/BIDU_GOLD.xml', 'https://github.com/volved2/LoadingAssetsTest/blob/main/images/characters/BIDU_GOLD.png?raw=true');
         bidu.quickAnimAdd('idle', 'BIDU idle dance');
         bidu.quickAnimAdd('singLEFT', 'BIDU NOTE LEFT0');
         bidu.quickAnimAdd('singDOWN', 'BIDU NOTE DOWN0');
